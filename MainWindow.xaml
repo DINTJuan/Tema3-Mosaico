@@ -6,16 +6,24 @@
         xmlns:local="clr-namespace:Tema3_Mosaico"
         mc:Ignorable="d"
         Title="Mosaico" Height="450" Width="800" MinHeight="400" MinWidth="400" Icon="Imagenes\128 (4).ico">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}" x:Key="H">
+            <Setter Property="Height" Value="100"/>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}" x:Key="W">
+            <Setter Property="Width" Value="100"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <DockPanel>
-            <TextBlock Height="100" Background="LightGreen"  DockPanel.Dock="Top"/>
-            <TextBlock Width="100" Background="BlanchedAlmond" DockPanel.Dock="Left"/>
-            <TextBlock Height="100" Background="Aqua" DockPanel.Dock="Bottom"/>
-            <TextBlock Width="100" Background="DeepPink"  DockPanel.Dock="Right"/>
-            <TextBlock Height="100" Background="GreenYellow"  DockPanel.Dock="Bottom"/>
-            <TextBlock Width="100" Background="GreenYellow" DockPanel.Dock="Left"/>
-            <TextBlock Height="100" Background="DarkViolet" DockPanel.Dock="Top"/>
-            <TextBlock Width="100" Background="DarkViolet" DockPanel.Dock="Right"/>
+            <TextBlock Style="{StaticResource H}" Background="LightGreen"  DockPanel.Dock="Top"/>
+            <TextBlock Style="{StaticResource W}" Background="BlanchedAlmond" DockPanel.Dock="Left"/>
+            <TextBlock Style="{StaticResource H}" Background="Aqua" DockPanel.Dock="Bottom"/>
+            <TextBlock Style="{StaticResource W}" Background="DeepPink"  DockPanel.Dock="Right"/>
+            <TextBlock Style="{StaticResource H}" Background="GreenYellow"  DockPanel.Dock="Bottom"/>
+            <TextBlock Style="{StaticResource W}" Background="GreenYellow" DockPanel.Dock="Left"/>
+            <TextBlock Style="{StaticResource H}" Background="DarkViolet" DockPanel.Dock="Top"/>
+            <TextBlock Style="{StaticResource W}" Background="DarkViolet" DockPanel.Dock="Right"/>
             <TextBlock Background="Black" DockPanel.Dock="Top"/>
         </DockPanel>
     </Grid>
